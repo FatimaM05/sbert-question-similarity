@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Similarity Finder</title>
+    <style>
+        body {
+            background: #f6fff6;
+            font-family: Segoe UI;
+            text-align: center;
+        }
+        input {
+            width: 70%;
+            padding: 10px;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .search { background: #165497; color: white; }
+        .clear { background: #DC3545; color: white; }
+        .output {
+            width: 80%;
+            margin: auto;
+            border: 2px solid #ccc;
+            padding: 15px;
+            background: white;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="/static/Astronaut with space shuttle.gif" width="150"><br>
+
+    <form method="POST">
+        <input type="text" name="question" placeholder="Enter your question">
+        <br>
+        <button class="search">Search</button>
+        <button class="clear" type="reset">Clear</button>
+    </form>
+
+    <div class="output">
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+
+        {% for r in results %}
+            <p>
+                🔹 <b>Rank {{ r.rank }}</b><br>
+                Question: {{ r.question_text }}<br>
+                Similarity: {{ "%.4f"|format(r.similarity_score) }}
+            </p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
