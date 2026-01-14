@@ -173,7 +173,7 @@ python query_duplicate.py --question "How do I speed up my VPN connection?"
 * Knowledge base optimization
 * Content moderation systems
 
-## Project Flow
+##  Project Flow
 
 ![System Flow](https://github.com/user-attachments/assets/dedd0e31-cfce-4c2a-9e43-c42a8f221283)
 
