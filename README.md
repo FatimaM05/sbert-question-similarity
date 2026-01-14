@@ -26,7 +26,8 @@ The system is evaluated using the **Quora Question Pairs dataset**, a widely use
 - [Usage](#-usage)  
 - [Limitations](#-limitations)  
 - [Future Improvements](#-future-improvements)  
-- [Use Cases](#-use-cases)  
+- [Use Cases](#-use-cases)
+- [Flow Diagram](#-project-flow)   
 
 ---
 
@@ -172,4 +173,7 @@ python query_duplicate.py --question "How do I speed up my VPN connection?"
 * Knowledge base optimization
 * Content moderation systems
 
+## Project Flow
+
+![System Flow](https://github.com/user-attachments/assets/dedd0e31-cfce-4c2a-9e43-c42a8f221283)
 
